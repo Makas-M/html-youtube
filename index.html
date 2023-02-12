@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8">
+	<title>Vedo do Youtube no HTML</title>
+</head>
+<body>
+	<h1>Video do Youtube</h1>
+	<h4>Remake Emakhaya Mlindo - Dj Makas - FL Studio</h4>
+	<div id="video1">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/2MnGMr6GhBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+	<button onclick="outro()">Outro</button>
+	
+</body>
+	<script>
+		function outro(){
+			var video = document.querySelector('#video1');
+
+			video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/UHxFP4aaTOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+		}
+		
+	</script>
+</html>
