@@ -1,0 +1,52 @@
+*{
+	padding: 0px;
+}
+
+#corpo {
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid;
+	
+
+}
+#corpo .conteudo {
+	position: relative;
+
+
+}
+#corpo .lista {
+	border: 1px solid;
+	
+}
+
+#corpo .lista li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#corpo .lista li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+#corpo .lista li a:hover,
+#corpo .lista li a.active{
+	color: #088178;
+}
+
+#corpo .lista li a.active::after,
+#corpo .lista li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px 
+}

@@ -2,27 +2,33 @@
 <html lang="pt-pt">
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
 	<title>Video do Youtube no HTML</title>
 </head>
 <body>
-	<h1>Remakes do Dj Makas</h1>
-	<h4 id="titulo">Remake Emakhaya Mlindo - Dj Makas - FL Studio</h4>
-	<div id="video1">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/2MnGMr6GhBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<section id="corpo">
+	<div class="conteudo">
+		<h1>Remakes do Dj Makas</h1>
+		<h4 id="titulo">Remake Emakhaya Mlindo - Dj Makas - FL Studio</h4>
+		<div id="video1">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/2MnGMr6GhBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>	
 	</div>
-	<ul>
-		<a href="" onclick="outro()">Anselmo Ralph</a>
-	</ul>
-	<button onclick="outro()">Outro</button>
+	<div class="lista">
+		<h1>Lista de Videos</h1>
+		<ul>
+			<li> <a onclick="videoUm()">Anselmo Ralph - Fim do Mundo</a></li>
+			<li> <a onclick="videoDois()">Mlindo - Emakhaya</a></li>
+			<li> <a onclick="videoTres()">Anselmo Ralph - Fim do Mundo</a></li>
+			<li> <a onclick="videoQuartro()">Anselmo Ralph - Fim do Mundo</a></li>
+			<li> <a onclick="videoCinco()">Anselmo Ralph - Fim do Mundo</a></li>
+		</ul>	
+	</div>
+		
+	</section>
 	
+	
+	<script src="script.js"></script>
 </body>
-	<script>
-		function outro(){
-			var titulo = document.querySelector('#titulo');
-			var video = document.querySelector('#video1');
-
-			titulo.innerHTML = 'Remake Anselmo Ralph - Fim do Mundo - Dj Makas - Fl Studio';
-			video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/UHxFP4aaTOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		}
-	</script>
+	
 </html>
