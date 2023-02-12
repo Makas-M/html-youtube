@@ -2,23 +2,27 @@
 <html lang="pt-pt">
 <head>
 	<meta charset="utf-8">
-	<title>Vedo do Youtube no HTML</title>
+	<title>Video do Youtube no HTML</title>
 </head>
 <body>
-	<h1>Video do Youtube</h1>
-	<h4>Remake Emakhaya Mlindo - Dj Makas - FL Studio</h4>
+	<h1>Remakes do Dj Makas</h1>
+	<h4 id="titulo">Remake Emakhaya Mlindo - Dj Makas - FL Studio</h4>
 	<div id="video1">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/2MnGMr6GhBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/2MnGMr6GhBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 	</div>
+	<ul>
+		<a href="" onclick="outro()">Anselmo Ralph</a>
+	</ul>
 	<button onclick="outro()">Outro</button>
 	
 </body>
 	<script>
 		function outro(){
+			var titulo = document.querySelector('#titulo');
 			var video = document.querySelector('#video1');
 
-			video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/UHxFP4aaTOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' 
+			titulo.innerHTML = 'Remake Anselmo Ralph - Fim do Mundo - Dj Makas - Fl Studio';
+			video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/UHxFP4aaTOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		}
-		
 	</script>
 </html>
