@@ -10,7 +10,7 @@ body {
 	background-color: rgba(100, 150, 200, 0.5);
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	height: 50px;
 
 }
@@ -18,29 +18,19 @@ body {
 	list-style: none;
 	padding: 0 20px;
 	position: relative;
+	flex-wrap: wrap;
 }
 
 #navbar li a{
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: 600;
-	color: #1a1a1a;
-	transition: 0.3s ease;
+	color: black;
+	transition: 0.4s ease;
 }
 
 #navbar li a:hover{
-	color: black;
-}
-
-#navbar li a.active::after,
-#navbar li a:hover::after{
-	content: "";
-	width: 30%;
-	height: 2px;
-	background: #088178;
-	position: absolute;
-	bottom: -4px;
-	left: 20px 
+	color: red;
 }
 
 
@@ -57,10 +47,6 @@ body {
 	align-content: center;
 
 
-}
-#corpo .lista {
-	
-	
 }
 
 #corpo .lista li{
@@ -79,16 +65,5 @@ body {
 }
 
 #corpo .lista li a:hover{
-	color: #088178;
-}
-
-#corpo .lista li a.active::after,
-#corpo .lista li a:hover::after{
-	content: "";
-	width: 30%;
-	height: 2px;
-	background: #088178;
-	position: absolute;
-	bottom: -4px;
-	left: 20px 
+	color: red;
 }

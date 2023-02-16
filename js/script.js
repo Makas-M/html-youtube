@@ -26,3 +26,5 @@ function videoQuatro(){
 	titulo.innerHTML = 'Remake Eamon - I dont Want you back - Dj Makas - Fl Studio';
 	video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ti-tviDXbws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 }
+
+//funcao de compra de instrumentais
